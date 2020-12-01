@@ -5,7 +5,8 @@
   
   cd PhoneBook
   
-  npm run install-all
+  npm install
+  npm install --prefix=client
 ```
 
 # Run
