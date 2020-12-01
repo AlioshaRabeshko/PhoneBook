@@ -2,7 +2,9 @@
 
 ```
   git clone https://github.com/AlioshaRabeshko/PhoneBook.git
-
+  
+  cd PhoneBook
+  
   npm run install-all
 ```
 
