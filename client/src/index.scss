@@ -1,0 +1,138 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #f6f7f8;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.App {
+	text-align: center;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 0 0 2px #2c2e36;
+	min-width: 500px;
+}
+
+@media all and (min-width: 900px) and (max-width: 1199px) {
+	.App {
+		width: 800px;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.App {
+		width: 800px;
+	}
+}
+
+@media all and (max-width: 899px) {
+	.App {
+		width: 95%;
+	}
+}
+
+.List {
+	list-style-type: none;
+	padding: 0;
+	.User {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		box-shadow: 0 0 1px #2c2e86;
+		.remove:hover {
+			cursor: pointer;
+			color: #c50e0e;
+		}
+		p {
+			flex: 1;
+			margin: 8px 0;
+		}
+		p:hover {
+			cursor: pointer;
+		}
+		.wide {
+			flex: 2;
+		}
+		.inline {
+			display: flex;
+		}
+	}
+}
+
+.columns {
+	p {
+		color: #0e0ec5;
+	}
+	span:hover {
+		user-select: none;
+		color: #c50e0e;
+	}
+}
+
+button {
+	width: 95%;
+	border: none;
+	padding: 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	background-color: #e7e7e7;
+}
+
+.popup-content {
+	margin: auto;
+	background: #fff;
+	width: 300px;
+	padding: 10px 25px 25px 25px;
+	.new,
+	.remove {
+		text-align: center;
+		input,
+		select {
+			width: 90%;
+			margin: 3px;
+			padding: 5px 0;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+				'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+				'Helvetica Neue', sans-serif;
+			font-size: medium;
+			outline: none;
+		}
+		select {
+			width: 91%;
+		}
+		button {
+			margin-top: 10px;
+		}
+		.invalid {
+			border-color: #c50e0e;
+		}
+	}
+}
+
+.popup-arrow {
+	color: #fff;
+}
+
+[role='tooltip'].popup-content {
+	width: 200px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+[data-popup='tooltip'].popup-overlay {
+	background: transparent;
+}
